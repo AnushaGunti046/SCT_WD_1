@@ -1,444 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anusha — Software Development Enthusiast</title>
 
-<title>Anusha | Developer Portfolio</title>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
-
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 </head>
-
-
 <body>
 
+<div class="bg-glow" aria-hidden="true"></div>
 
 <nav id="nav">
+  <h2 class="logo">Anusha</h2>
 
+  <div class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" role="button" tabindex="0">
+    <i class="fa-solid fa-bars"></i>
+  </div>
 
-<h2>Anusha</h2>
-
-
-
-<div class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
-
-<i class="fa-solid fa-bars"></i>
-
-</div>
-
-
-
-
-
-<div class="nav-links" id="nav-links">
-
-
-<a href="#home" aria-label="Go to Home section">
-Home
-</a>
-
-
-<a href="#about" aria-label="Go to About section">
-About
-</a>
-
-
-<a href="#skills" aria-label="Go to Skills section">
-Skills
-</a>
-
-
-<a href="#projects" aria-label="Go to Projects section">
-Projects
-</a>
-
-
-<a href="#contact" aria-label="Go to Contact section">
-Contact
-</a>
-
-
-</div>
-
-
+  <div class="nav-links" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
-
-
-
-
-
 <section id="home" class="hero">
+  <div class="hero-inner reveal">
+    <p class="intro">Hi, I'm Anusha 👋</p>
+    <h1>Frontend Developer<br><span class="role-type" id="typed-role">Java Developer</span><span class="cursor">|</span></h1>
+    <p class="hero-sub">Third-year CSE student building a strong foundation across Java, DSA, web development, and cloud computing — one project at a time.</p>
 
+    <div class="buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+  </div>
 
-<div>
-
-
-<p class="intro">
-Hi, I'm Anusha 👋
-</p>
-
-
-
-<h1>
-
-Frontend Developer
-
-<br>
-
-Building Interactive Web Experiences
-
-</h1>
-
-
-
-<p>
-
-I love creating responsive websites,
-learning new technologies and solving problems.
-
-</p>
-
-
-
-
-<div class="buttons">
-
-
-<a href="#projects">
-View Projects
-</a>
-
-
-<a href="#contact">
-Contact Me
-</a>
-
-
-</div>
-
-
-</div>
-
-
+  <div class="avatar-wrap reveal">
+    <div class="avatar-glow"></div>
+    <div class="avatar-circle">A</div>
+    <span class="badge badge-1"><i class="fa-brands fa-java"></i></span>
+    <span class="badge badge-2"><i class="fa-brands fa-react"></i></span>
+    <span class="badge badge-3"><i class="fa-brands fa-js"></i></span>
+    <span class="badge badge-4"><i class="fa-solid fa-cloud"></i></span>
+  </div>
 </section>
 
-
-
-
-
-
-<section class="stats">
-
-
-<div>
-
-<h2>
-100+
-</h2>
-
-<p>
-Coding Problems
-</p>
-
-</div>
-
-
-
-<div>
-
-<h2>
-5+
-</h2>
-
-<p>
-Projects
-</p>
-
-</div>
-
-
-
-<div>
-
-<h2>
-10+
-</h2>
-
-<p>
-Technologies
-</p>
-
-</div>
-
-
+<section class="stats reveal">
+  <div class="stat">
+    <h2 class="count" data-target="100">0</h2>
+    <p>Coding Problems<span class="plus">+</span></p>
+  </div>
+  <div class="stat">
+    <h2 class="count" data-target="5">0</h2>
+    <p>Projects<span class="plus">+</span></p>
+  </div>
+  <div class="stat">
+    <h2 class="count" data-target="10">0</h2>
+    <p>Technologies<span class="plus">+</span></p>
+  </div>
 </section>
 
+<section id="about" class="reveal">
+  <h2>About Me</h2>
 
+  <div class="about-grid">
+    <div class="about-summary">
+      <p>
+        I'm a Computer Science &amp; Engineering student with a strong foundation in Java, Object-Oriented
+        Programming, and Data Structures &amp; Algorithms, along with hands-on experience in frontend web
+        development and cloud fundamentals. I'm currently expanding into AI and Data Science through
+        industry-oriented learning programs, and I'm always looking for the next challenge to turn into
+        a real project.
+      </p>
 
+      <div class="chip-row">
+        <span class="chip">Java &amp; OOP</span>
+        <span class="chip">DSA</span>
+        <span class="chip">Frontend Web Dev</span>
+        <span class="chip">Cloud — Azure Fundamentals</span>
+        <span class="chip">AI &amp; Data Science</span>
+        <span class="chip">Internship Experience</span>
+      </div>
 
+      <button class="btn btn-primary" id="story-btn">Read My Full Story</button>
+    </div>
 
+    <div class="story-box" id="story-box">
+      <p class="story-para" data-text="I've developed a strong foundation in software development with hands-on exposure to Java programming, Data Structures and Algorithms (DSA), web technologies, cloud computing, and emerging technologies. My technical journey focuses on building practical solutions, strengthening problem-solving abilities, and continuously improving my skills through projects, internships, and industry-oriented learning programs."></p>
 
+      <p class="story-para" data-text="I have strong knowledge of Java and Object-Oriented Programming concepts, along with consistent practice in Data Structures and Algorithms to enhance my logical thinking, coding efficiency, and problem-solving approach. I actively work on analyzing problems, designing optimized solutions, and writing clean, maintainable code."></p>
 
-<section id="about">
+      <p class="story-para" data-text="I have experience in frontend web development, working with modern web technologies to create responsive and user-friendly applications. Through internship opportunities, I'm gaining real-world exposure to software development practices, teamwork, project workflows, and applying technical knowledge to practical scenarios."></p>
 
+      <p class="story-para" data-text="I've explored cloud computing and Microsoft Azure fundamentals through the Infosys Springboard certification, building an understanding of cloud services, virtualization, scalability, and the role of cloud platforms in building secure and efficient digital solutions."></p>
 
-<h2>
-About Me
-</h2>
+      <p class="story-para" data-text="I'm also expanding my knowledge in Artificial Intelligence, Data Science, and software engineering practices through programs like Infosys Springboard's Pragati: Path to Future – Cohort 9. Along with technical skills, I continuously work on my communication, collaboration, and professional skills."></p>
 
+      <p class="story-para" data-text="My goal is to become a skilled software engineer by combining strong programming fundamentals, problem-solving ability, development experience, and continuous learning to build impactful technology solutions. I value curiosity, consistency, and a growth-oriented mindset — and I enjoy turning what I learn into real, practical projects."></p>
 
-<p class="about-text">
-
-Computer Science student passionate about
-web development, Java, DSA and building
-real-world applications.
-
-</p>
-
-
+      <span class="story-cursor" id="story-cursor">|</span>
+    </div>
+  </div>
 </section>
 
+<section id="skills" class="reveal">
+  <h2>Tech Stack</h2>
 
-
-
-
-
-
-<section id="skills">
-
-
-<h2>
-Tech Stack
-</h2>
-
-
-
-<div class="skills">
-
-
-<span>
-HTML
-</span>
-
-
-<span>
-CSS
-</span>
-
-
-<span>
-JavaScript
-</span>
-
-
-<span>
-React
-</span>
-
-
-<span>
-Java
-</span>
-
-
-<span>
-DSA
-</span>
-
-
-<span>
-MongoDB
-</span>
-
-
-
-</div>
-
-
+  <div class="skills-grid">
+    <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+    <div class="skill-card"><i class="fa-solid fa-diagram-project"></i><span>DSA</span></div>
+    <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+    <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+    <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+    <div class="skill-card"><i class="fa-brands fa-react"></i><span>Communication</span></div>
+    <div class="skill-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+    <div class="skill-card"><i class="fa-brands fa-microsoft"></i><span>Azure Fundamentals</span></div>
+    <div class="skill-card"><i class="fa-solid fa-brain"></i><span>Cyber Security</span></div>
+  </div>
 </section>
 
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
 
+  <div class="cards">
+    <div class="card">
+      <span class="card-tag">Featured</span>
+      <h3>Lost &amp; Found System</h3>
+      <p>A platform to report and manage lost items using modern web technologies, focused on fast search and a simple reporting flow.</p>
+      <div class="card-stack">
+        <span>React</span><span>Node.js</span>
+      </div>
+    </div>
 
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal portfolio with an interactive UI, smooth scroll animations, and a fully mobile-friendly layout.</p>
+      <div class="card-stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
 
-
-
-
-<section id="projects">
-
-
-<h2>
-Projects
-</h2>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-
-<h3>
-Lost & Found System
-</h3>
-
-
-<p>
-
-A platform to report and manage lost items
-using modern web technologies.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-Portfolio Website
-</h3>
-
-
-<p>
-
-Responsive personal portfolio with
-interactive UI.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-Learning Projects
-</h3>
-
-
-<p>
-
-Frontend and programming practice projects.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
+    <div class="card">
+      <h3>DSA Practice Log</h3>
+      <p>A running log of Data Structures &amp; Algorithms problems, patterns, and notes from consistent daily practice.</p>
+      <div class="card-stack">
+        <span>Java</span>
+      </div>
+    </div>
+  </div>
 </section>
 
+<section id="contact" class="reveal">
+  <h2>Let's Connect</h2>
+  <p class="contact-sub">Feel free to reach out — I'm always happy to talk about tech, projects, or opportunities.</p>
 
-
-
-
-
-
-<section id="contact">
-
-
-<h2>
-Let's Connect
-</h2>
-
-
-
-<p>
-Feel free to connect with me.
-</p>
-
-
-
-<div class="social-links">
-
-
-<a href="https://www.linkedin.com"
-target="_blank"
-aria-label="LinkedIn Profile">
-
-<i class="fa-brands fa-linkedin"></i>
-
-LinkedIn
-
-</a>
-
-
-
-
-<a href="https://github.com"
-target="_blank"
-aria-label="GitHub Profile">
-
-<i class="fa-brands fa-github"></i>
-
-GitHub
-
-</a>
-
-
-
-
-<a href="mailto:example@gmail.com"
-aria-label="Send Email">
-
-<i class="fa-solid fa-envelope"></i>
-
-Email
-
-</a>
-
-
-
-</div>
-
-
+  <div class="social-links">
+    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn Profile">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com" target="_blank" aria-label="GitHub Profile">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    <a href="mailto:example@gmail.com" aria-label="Send Email">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
+  </div>
 </section>
-
-
-
-
-
 
 <footer>
-
-<p>
-© 2026 Anusha | Developer Portfolio
-</p>
-
+  <p>© 2026 Anusha | Developer Portfolio</p>
 </footer>
 
-
-
-
-
-
 <script src="js/script.js"></script>
-
-
 </body>
-
 </html>
